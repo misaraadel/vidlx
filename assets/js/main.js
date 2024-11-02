@@ -150,6 +150,18 @@ $(document).ready(function () {
     countrySearch: true,
   });
 
+  var input = document.querySelector("#telephone2");
+  window.intlTelInput(input, {
+    initialCountry: "eg", 
+    separateDialCode: true, 
+    nationalMode: false,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    countrySearch: true,
+    formatAsYouType: true,
+    containerClass: "form-control",
+    countrySearch: true,
+  });
+
   
 });
 
