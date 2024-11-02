@@ -1038,31 +1038,40 @@ header {
 }
 @media (max-width: 992px) {
   header {
-    padding: 120px 0px 0px;
+    padding: 500px 0px 0px;
   }
 }
 header::after, header::before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 45%;
   height: 100%;
-  top: 0;
-  left: 0;
-}
-header::after {
-  background: url("../images/intro/intro.webp") top right/cover repeat-y;
-  z-index: -2;
-  animation: moving 400s linear infinite;
+  top: 0%;
+  left: 0%;
 }
 @media (max-width: 992px) {
-  header::after {
-    opacity: 0.1;
+  header::after, header::before {
+    width: 100%;
+    height: 450px;
+    left: 0px;
   }
+}
+header::after {
+  background: url("../images/intro/intro.webp") center/cover repeat-y;
+  z-index: -2;
+  animation: moving 400s linear infinite;
 }
 header::before {
   height: 105%;
   background: url("../images/intro/shadow.svg") center/cover no-repeat;
   z-index: -1;
+}
+@media (max-width: 992px) {
+  header::before {
+    width: 100%;
+    height: 400px !important;
+    top: 67px;
+  }
 }
 header .contain {
   width: 100%;
@@ -3224,6 +3233,11 @@ footer .contain .qr-contain img {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 992px) {
+  .login-page .form-contain {
+    padding: 20px 10px;
+  }
+}
 .login-page .form-contain .custom-btn {
   margin-top: 20px !important;
 }
@@ -3245,6 +3259,7 @@ footer .contain .qr-contain img {
   border-left: 0px;
   border-right: 0px;
   border-radius: 0px;
+  border: 0px !important;
 }
 .login-page .nav.four-tabs .nav-item {
   width: calc(25% - 10px);
@@ -3265,6 +3280,7 @@ footer .contain .qr-contain img {
   align-content: center;
   align-items: center;
   gap: 10px;
+  padding: 0px;
 }
 .login-page .nav.four-tabs .nav-item .nav-link .icon-data {
   width: 30px;
@@ -3282,6 +3298,11 @@ footer .contain .qr-contain img {
   color: var(--gray-color);
   font-size: 16px;
   font-weight: 500;
+}
+@media (max-width: 992px) {
+  .login-page .nav.four-tabs .nav-item .nav-link span {
+    font-size: 9px;
+  }
 }
 .login-page .nav.four-tabs .nav-item .nav-link.active {
   background-color: transparent;

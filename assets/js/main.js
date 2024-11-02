@@ -162,3 +162,5 @@ document.getElementById('product-upload').addEventListener('change', function() 
   const fileName = this.files[0].name;
   document.getElementById('product-upload-box').querySelector('p').textContent = fileName;
 });
+
+
