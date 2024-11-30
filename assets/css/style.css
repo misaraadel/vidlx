@@ -1341,8 +1341,8 @@ html[dir=rtl] .form-contain .form-group .form-icon .icon, html[dir=rtl] .form-co
   pointer-events: none;
 }
 .form-contain .form-group .form-icon .select2-container--default .select2-selection--single,
-.form-contain .form-group .form-icon .form-control, .form-contain .form-group .form-icon #Specialization, .form-contain .form-group .form-icon .iti.iti--allow-dropdown, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single,
-.form-contain .form-group .show_hide_password .form-control, .form-contain .form-group .show_hide_password #Specialization, .form-contain .form-group .show_hide_password .iti.iti--allow-dropdown {
+.form-contain .form-group .form-icon .form-control, .form-contain .form-group .form-icon #Specialization, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single,
+.form-contain .form-group .show_hide_password .form-control, .form-contain .form-group .show_hide_password #Specialization {
   width: 100%;
   height: 100%;
   border: 1px solid #E5E7E7;
@@ -1354,23 +1354,23 @@ html[dir=rtl] .form-contain .form-group .form-icon .icon, html[dir=rtl] .form-co
   font-size: 15px;
   font-weight: 500;
 }
-.form-contain .form-group .form-icon .select2-container--default .select2-selection--single::-moz-placeholder, .form-contain .form-group .form-icon .form-control::-moz-placeholder, .form-contain .form-group .form-icon #Specialization::-moz-placeholder, .form-contain .form-group .form-icon .iti.iti--allow-dropdown::-moz-placeholder, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single::-moz-placeholder, .form-contain .form-group .show_hide_password .form-control::-moz-placeholder, .form-contain .form-group .show_hide_password #Specialization::-moz-placeholder, .form-contain .form-group .show_hide_password .iti.iti--allow-dropdown::-moz-placeholder {
+.form-contain .form-group .form-icon .select2-container--default .select2-selection--single::-moz-placeholder, .form-contain .form-group .form-icon .form-control::-moz-placeholder, .form-contain .form-group .form-icon #Specialization::-moz-placeholder, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single::-moz-placeholder, .form-contain .form-group .show_hide_password .form-control::-moz-placeholder, .form-contain .form-group .show_hide_password #Specialization::-moz-placeholder {
   color: #7F7F7F;
   font-size: 15px;
   font-weight: 500;
   text-transform: capitalize;
 }
 .form-contain .form-group .form-icon .select2-container--default .select2-selection--single::placeholder,
-.form-contain .form-group .form-icon .form-control::placeholder, .form-contain .form-group .form-icon #Specialization::placeholder, .form-contain .form-group .form-icon .iti.iti--allow-dropdown::placeholder, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single::placeholder,
-.form-contain .form-group .show_hide_password .form-control::placeholder, .form-contain .form-group .show_hide_password #Specialization::placeholder, .form-contain .form-group .show_hide_password .iti.iti--allow-dropdown::placeholder {
+.form-contain .form-group .form-icon .form-control::placeholder, .form-contain .form-group .form-icon #Specialization::placeholder, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single::placeholder,
+.form-contain .form-group .show_hide_password .form-control::placeholder, .form-contain .form-group .show_hide_password #Specialization::placeholder {
   color: #7F7F7F;
   font-size: 15px;
   font-weight: 500;
   text-transform: capitalize;
 }
 .form-contain .form-group .form-icon .select2-container--default .select2-selection--single:hover,
-.form-contain .form-group .form-icon .form-control:hover, .form-contain .form-group .form-icon #Specialization:hover, .form-contain .form-group .form-icon .iti.iti--allow-dropdown:hover, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single:hover,
-.form-contain .form-group .show_hide_password .form-control:hover, .form-contain .form-group .show_hide_password #Specialization:hover, .form-contain .form-group .show_hide_password .iti.iti--allow-dropdown:hover {
+.form-contain .form-group .form-icon .form-control:hover, .form-contain .form-group .form-icon #Specialization:hover, .form-contain .form-group .show_hide_password .select2-container--default .select2-selection--single:hover,
+.form-contain .form-group .show_hide_password .form-control:hover, .form-contain .form-group .show_hide_password #Specialization:hover {
   -webkit-appearance: none !important;
      -moz-appearance: none !important;
           appearance: none !important;
@@ -2539,9 +2539,10 @@ footer .contain .qr-contain img {
   background-color: transparent;
   border: 0px;
   padding: 0px;
-  padding-inline-start: 10px;
-  margin-inline-start: 8px;
+  padding-inline-end: 10px;
+  margin-inline-end: 8px;
   color: var(--dark-color);
+  direction: ltr;
 }
 .form-group #telephone::-moz-placeholder, .form-group #telephone2::-moz-placeholder {
   color: var(--dark-color);
@@ -3392,6 +3393,15 @@ footer .contain .qr-contain img {
   color: var(--light-color);
   border: 0px;
   border-radius: 50px;
+}
+
+.iti.iti--allow-dropdown {
+  padding-left: 75px !important;
+}
+
+[dir=rtl] .iti--allow-dropdown .iti__country-container, [dir=rtl] .iti--show-selected-dial-code .iti__country-container {
+  left: 0px !important;
+  right: unset;
 }
 
 @media (max-width: 999px) {
