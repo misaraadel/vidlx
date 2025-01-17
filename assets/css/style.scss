@@ -2861,6 +2861,21 @@ footer {
 .aspect-ratios-container {
   @include flexData();
   gap: 10px;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  .data {
+    @include flexColumnCenter();
+    gap: 0px;
+    text-align: center;
+
+    p {
+      color: var(--gray-color);
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0px;
+    }
+  }
 }
 
 $checked-color: #ffffff;
@@ -2875,7 +2890,7 @@ $border-radius: 10px;
   width: $label-width;
   height: $label-height;
   background-color: #f4f4f2;
-  border: 1px solid #989c9f;
+  border: 1px solid #f4f4f2;
   border-radius: $border-radius;
   font-size: 14px;
   overflow: hidden;
@@ -2884,6 +2899,36 @@ $border-radius: 10px;
   transition: all 0.3s ease;
   @include flexCenter();
   text-align: center;
+
+  &.tiktok {
+    width: 36px;
+    height: 64px;
+  }
+
+  &.instagram {
+    width: 50px;
+    height: 50px;
+  }
+
+  &.youtube-big {
+    width: 64px;
+    height: 36px;
+  }
+
+  &.youtube-small {
+    width: 40px;
+    height: 30px;
+  }
+
+  &.big-frame {
+    width: 44px;
+    height: 32px;
+  }
+
+  &.frame {
+    width: 41px;
+    height: 48px;
+  }
 
   // إزالة التنسيق الافتراضي للـ input checkbox
   input[type="checkbox"] {
@@ -2894,6 +2939,13 @@ $border-radius: 10px;
   span {
     display: block;
     text-align: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      filter: var(--gray-filter);
+    }
   }
 
   // تأثير عند اختيار النسبة
@@ -2904,6 +2956,10 @@ $border-radius: 10px;
     width: 100%;
     height: 100%;
     @include flexCenter();
+
+    img {
+      filter: var(--light-filter);
+    }
   }
 }
 
