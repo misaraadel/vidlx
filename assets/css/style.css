@@ -662,6 +662,21 @@ input[type=number]::-webkit-outer-spin-button {
 .custom-btn.danger-btn:hover span {
   color: var(--danger-color);
 }
+.custom-btn.green-btn {
+  background-color: #ebfeff;
+  border-color: #ebfeff !important;
+}
+.custom-btn.green-btn::after, .custom-btn.green-btn::before {
+  background-color: #ebfeff;
+}
+.custom-btn.green-btn span {
+  color: #34c759;
+}
+.custom-btn.green-btn:hover {
+  border-color: #34c759 !important;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px rgba(52, 199, 89, 0.1);
+}
 .custom-btn.gray-btn {
   background-color: #e5e7e7;
   border-color: #e5e7e7 !important;

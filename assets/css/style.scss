@@ -183,6 +183,26 @@
     }
   }
 
+  &.green-btn {
+    background-color: #ebfeff;
+    border-color: #ebfeff !important;
+
+    &::after,
+    &::before {
+      background-color: #ebfeff;
+    }
+
+    span {
+      color: #34c759;
+    }
+
+    &:hover {
+      border-color: #34c759 !important;
+      background-color: transparent;
+      box-shadow: 0px 0px 10px rgba($color: #34c759, $alpha: 0.1);
+    }
+  }
+
   &.gray-btn {
     background-color: #e5e7e7;
     border-color: #e5e7e7 !important;
