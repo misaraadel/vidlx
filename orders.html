@@ -109,7 +109,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-6 col-12 mx-auto">
+            <div class="col-lg-9 col-12 mx-auto">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <a
@@ -140,7 +140,7 @@
               </ul>
             </div>
 
-            <div class="col-12">
+            <div class="col-lg-9 col-12 mx-auto">
               <div class="tab-content" id="myTabContent">
                 <div
                   class="tab-pane fade show active"
@@ -148,297 +148,496 @@
                   role="tabpanel"
                   aria-labelledby="home-tab"
                 >
-                  <div class="row">
-                    <div class="col-lg-6 col-12 mx-auto">
-                      <div class="order-box mb-3">
-                        <div class="contain">
-                          <div class="badge green">تم الإنتهاء</div>
+                  <div class="order-box">
+                    <div class="flex-between">
+                      <div class="data-contain">
+                        <h1>فيديو من 30 إلى 60 ثانيه</h1>
 
-                          <h2>فيديو من 30 إلى 60 ثانيه</h2>
+                        <ul class="list">
+                          <li>
+                            <img
+                              src="assets/images/orders/user.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                          <ul class="list">
-                            <li>
-                              <span class="name"> تاريخ الطلب: </span>
+                            <span class="data"> أحمد عبده </span>
+                          </li>
 
-                              <span class="data"> 26/10/2024 </span>
-                            </li>
+                          <li>
+                            <img
+                              src="assets/images/orders/money.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                            <li>
-                              <span class="name"> تاريخ الأستلام: </span>
+                            <span class="data"> $ 20.00 </span>
+                          </li>
 
-                              <span class="data"> 29/10/2024 </span>
-                            </li>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                            <li>
-                              <span class="name"> صانع المحتوى: </span>
+                            <span class="name"> بدء الطلب: </span>
 
-                              <span class="data primary-color">
-                                أحمد عبده
-                              </span>
-                            </li>
+                            <span class="data"> 26/10/2024 </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> السعر: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color"> $20 </span>
-                            </li>
-                          </ul>
-                        </div>
+                            <span class="name"> إستلام: </span>
 
-                        <a
-                          href="order-details.html"
-                          class="custom-btn primary-btn small-btn"
-                        >
-                          <span> عرض الطلب </span>
-                        </a>
+                            <span class="data"> 29/10/2024 </span>
+                          </li>
+                        </ul>
                       </div>
 
-                      <div class="order-box mb-3">
-                        <div class="contain">
-                          <div class="badge primary">قيد الأنتظار</div>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#orderDetailsModal"
+                        type="button"
+                        class="see-order-details"
+                      >
+                        <img
+                          src="assets/images/orders/dots.svg"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </a>
+                    </div>
 
-                          <h2>فيديو من 30 إلى 60 ثانيه</h2>
+                    <div class="flex-between border-shape">
+                      <div class="badge green">تم الإنتهاء</div>
 
-                          <ul class="list">
-                            <li>
-                              <span class="name"> تاريخ الطلب: </span>
+                      <a
+                        href="order-details.html"
+                        class="custom-btn primary-btn"
+                      >
+                        <span> عرض الطلب </span>
+                      </a>
+                    </div>
+                  </div>
 
-                              <span class="data"> 26/10/2024 </span>
-                            </li>
+                  <div class="order-box">
+                    <div class="flex-between">
+                      <div class="data-contain">
+                        <h1>فيديو من 30 إلى 60 ثانيه</h1>
 
-                            <li>
-                              <span class="name"> تاريخ الأستلام: </span>
+                        <ul class="list">
+                          <li>
+                            <img
+                              src="assets/images/orders/user.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data"> 29/10/2024 </span>
-                            </li>
+                            <span class="data"> أحمد عبده </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> صانع المحتوى: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/money.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color">
-                                أحمد عبده
-                              </span>
-                            </li>
+                            <span class="data"> $ 20.00 </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> السعر: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color"> $20 </span>
-                            </li>
+                            <span class="name"> بدء الطلب: </span>
 
-                            <li>
-                              <span class="name"> يمكنك الإلغاء خلال: </span>
+                            <span class="data"> 26/10/2024 </span>
+                          </li>
 
-                              <span class="data primary-color"> 14:59 </span>
-                            </li>
-                          </ul>
-                        </div>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                        <a
-                          href="#"
-                          data-toggle="modal"
-                          data-target="#cancelOrderModal"
-                          class="custom-btn danger-btn small-btn"
-                        >
-                          <span> إلغاء الخدمة </span>
-                        </a>
+                            <span class="name"> إستلام: </span>
+
+                            <span class="data"> 29/10/2024 </span>
+                          </li>
+                        </ul>
                       </div>
 
-                      <div class="order-box mb-3">
-                        <div class="contain">
-                          <div class="badge primary">قيد الأنتظار</div>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#orderDetailsModal"
+                        type="button"
+                        class="see-order-details"
+                      >
+                        <img
+                          src="assets/images/orders/dots.svg"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </a>
+                    </div>
 
-                          <h2>فيديو من 30 إلى 60 ثانيه</h2>
+                    <div class="flex-between border-shape">
+                      <div class="badge primary">قيد الإنتظار</div>
 
-                          <ul class="list">
-                            <li>
-                              <span class="name"> تاريخ الطلب: </span>
+                      <a
+                        href="#"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#cancelOrderModal"
+                        class="custom-btn danger-btn"
+                      >
+                        <span> إلغاء الخدمة ( 5:59:59 ) </span>
+                      </a>
+                    </div>
+                  </div>
 
-                              <span class="data"> 26/10/2024 </span>
-                            </li>
+                  <div class="order-box">
+                    <div class="flex-between">
+                      <div class="data-contain">
+                        <h1>فيديو من 30 إلى 60 ثانيه</h1>
 
-                            <li>
-                              <span class="name"> تاريخ الأستلام: </span>
+                        <ul class="list">
+                          <li>
+                            <img
+                              src="assets/images/orders/user.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data"> 29/10/2024 </span>
-                            </li>
+                            <span class="data"> أحمد عبده </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> صانع المحتوى: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/money.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color">
-                                أحمد عبده
-                              </span>
-                            </li>
+                            <span class="data"> $ 20.00 </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> السعر: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color"> $20 </span>
-                            </li>
+                            <span class="name"> بدء الطلب: </span>
 
-                            <li>
-                              <span class="name"> يمكنك الإلغاء خلال: </span>
+                            <span class="data"> 26/10/2024 </span>
+                          </li>
 
-                              <span class="data primary-color"> 14:59 </span>
-                            </li>
-                          </ul>
-                        </div>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                        <div class="custom-btn gray-btn small-btn">
-                          <span> إلغاء الخدمة </span>
-                        </div>
+                            <span class="name"> إستلام: </span>
+
+                            <span class="data"> 29/10/2024 </span>
+                          </li>
+                        </ul>
                       </div>
+
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#orderDetailsModal"
+                        type="button"
+                        class="see-order-details"
+                      >
+                        <img
+                          src="assets/images/orders/dots.svg"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div class="flex-between border-shape">
+                      <div class="badge orange">جارى التنفيز</div>
+
+                      <a
+                        href="#"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#cancelOrderModal"
+                        class="custom-btn gray-btn"
+                      >
+                        <span> إلغاء الخدمة </span>
+                      </a>
                     </div>
                   </div>
                 </div>
+
                 <div
                   class="tab-pane fade"
                   id="profile"
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                 >
-                  <div class="row">
-                    <div class="col-lg-6 col-12 mx-auto">
-                      <div class="order-box mb-3">
-                        <div class="contain">
-                          <div class="badge green">تم الإنتهاء</div>
+                  <div class="order-box">
+                    <div class="flex-between">
+                      <div class="data-contain">
+                        <h1>فيديو من 30 إلى 60 ثانيه</h1>
 
-                          <h2>فيديو من 30 إلى 60 ثانيه</h2>
+                        <ul class="list">
+                          <li>
+                            <img
+                              src="assets/images/orders/user.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                          <ul class="list">
-                            <li>
-                              <span class="name"> تاريخ الطلب: </span>
+                            <span class="data"> أحمد عبده </span>
+                          </li>
 
-                              <span class="data"> 26/10/2024 </span>
-                            </li>
+                          <li>
+                            <img
+                              src="assets/images/orders/money.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                            <li>
-                              <span class="name"> تاريخ الأستلام: </span>
+                            <span class="data"> $ 20.00 </span>
+                          </li>
 
-                              <span class="data"> 29/10/2024 </span>
-                            </li>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                            <li>
-                              <span class="name"> صانع المحتوى: </span>
+                            <span class="name"> بدء الطلب: </span>
 
-                              <span class="data primary-color">
-                                أحمد عبده
-                              </span>
-                            </li>
+                            <span class="data"> 26/10/2024 </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> السعر: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color"> $20 </span>
-                            </li>
-                          </ul>
-                        </div>
+                            <span class="name"> إستلام: </span>
 
-                        <a
-                          href="order-details.html"
-                          class="custom-btn primary-btn small-btn"
-                        >
-                          <span> عرض الطلب </span>
-                        </a>
+                            <span class="data"> 29/10/2024 </span>
+                          </li>
+                        </ul>
                       </div>
 
-                      <div class="order-box mb-3">
-                        <div class="contain">
-                          <div class="badge primary">قيد الأنتظار</div>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#orderDetailsModal"
+                        type="button"
+                        class="see-order-details"
+                      >
+                        <img
+                          src="assets/images/orders/dots.svg"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </a>
+                    </div>
 
-                          <h2>فيديو من 30 إلى 60 ثانيه</h2>
+                    <div class="flex-between border-shape">
+                      <div class="badge green">تم الإنتهاء</div>
 
-                          <ul class="list">
-                            <li>
-                              <span class="name"> تاريخ الطلب: </span>
+                      <a
+                        href="order-details.html"
+                        class="custom-btn primary-btn"
+                      >
+                        <span> عرض الطلب </span>
+                      </a>
+                    </div>
+                  </div>
 
-                              <span class="data"> 26/10/2024 </span>
-                            </li>
+                  <div class="order-box">
+                    <div class="flex-between">
+                      <div class="data-contain">
+                        <h1>فيديو من 30 إلى 60 ثانيه</h1>
 
-                            <li>
-                              <span class="name"> تاريخ الأستلام: </span>
+                        <ul class="list">
+                          <li>
+                            <img
+                              src="assets/images/orders/user.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data"> 29/10/2024 </span>
-                            </li>
+                            <span class="data"> أحمد عبده </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> صانع المحتوى: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/money.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color">
-                                أحمد عبده
-                              </span>
-                            </li>
+                            <span class="data"> $ 20.00 </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> السعر: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color"> $20 </span>
-                            </li>
+                            <span class="name"> بدء الطلب: </span>
 
-                            <li>
-                              <span class="name"> يمكنك الإلغاء خلال: </span>
+                            <span class="data"> 26/10/2024 </span>
+                          </li>
 
-                              <span class="data primary-color"> 14:59 </span>
-                            </li>
-                          </ul>
-                        </div>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                        <a
-                          href="#"
-                          data-toggle="modal"
-                          data-target="#cancelOrderModal"
-                          class="custom-btn danger-btn small-btn"
-                        >
-                          <span> إلغاء الخدمة </span>
-                        </a>
+                            <span class="name"> إستلام: </span>
+
+                            <span class="data"> 29/10/2024 </span>
+                          </li>
+                        </ul>
                       </div>
 
-                      <div class="order-box mb-3">
-                        <div class="contain">
-                          <div class="badge primary">قيد الأنتظار</div>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#orderDetailsModal"
+                        type="button"
+                        class="see-order-details"
+                      >
+                        <img
+                          src="assets/images/orders/dots.svg"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </a>
+                    </div>
 
-                          <h2>فيديو من 30 إلى 60 ثانيه</h2>
+                    <div class="flex-between border-shape">
+                      <div class="badge primary">قيد الإنتظار</div>
 
-                          <ul class="list">
-                            <li>
-                              <span class="name"> تاريخ الطلب: </span>
+                      <a
+                        href="#"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#cancelOrderModal"
+                        class="custom-btn danger-btn"
+                      >
+                        <span> إلغاء الخدمة ( 5:59:59 ) </span>
+                      </a>
+                    </div>
+                  </div>
 
-                              <span class="data"> 26/10/2024 </span>
-                            </li>
+                  <div class="order-box">
+                    <div class="flex-between">
+                      <div class="data-contain">
+                        <h1>فيديو من 30 إلى 60 ثانيه</h1>
 
-                            <li>
-                              <span class="name"> تاريخ الأستلام: </span>
+                        <ul class="list">
+                          <li>
+                            <img
+                              src="assets/images/orders/user.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data"> 29/10/2024 </span>
-                            </li>
+                            <span class="data"> أحمد عبده </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> صانع المحتوى: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/money.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color">
-                                أحمد عبده
-                              </span>
-                            </li>
+                            <span class="data"> $ 20.00 </span>
+                          </li>
 
-                            <li>
-                              <span class="name"> السعر: </span>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                              <span class="data primary-color"> $20 </span>
-                            </li>
+                            <span class="name"> بدء الطلب: </span>
 
-                            <li>
-                              <span class="name"> يمكنك الإلغاء خلال: </span>
+                            <span class="data"> 26/10/2024 </span>
+                          </li>
 
-                              <span class="data primary-color"> 14:59 </span>
-                            </li>
-                          </ul>
-                        </div>
+                          <li>
+                            <img
+                              src="assets/images/orders/time.svg"
+                              loading="lazy"
+                              alt=""
+                            />
 
-                        <div class="custom-btn gray-btn small-btn">
-                          <span> إلغاء الخدمة </span>
-                        </div>
+                            <span class="name"> إستلام: </span>
+
+                            <span class="data"> 29/10/2024 </span>
+                          </li>
+                        </ul>
                       </div>
+
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#orderDetailsModal"
+                        type="button"
+                        class="see-order-details"
+                      >
+                        <img
+                          src="assets/images/orders/dots.svg"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div class="flex-between border-shape">
+                      <div class="badge orange">جارى التنفيز</div>
+
+                      <a
+                        href="#"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#cancelOrderModal"
+                        class="custom-btn gray-btn"
+                      >
+                        <span> إلغاء الخدمة </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -601,6 +800,183 @@
 
     <div
       class="modal fade"
+      id="orderDetailsModal"
+      tabindex="-1"
+      aria-labelledby="orderDetailsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>تفاصيل الطلب</h1>
+
+            <a
+              href="#"
+              type="button"
+              class="close-popup"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </a>
+          </div>
+
+          <div class="modal-body">
+            <div class="contain">
+              <div class="address-contain">
+                <h2 class="title">تفاصيل العنوان</h2>
+
+                <ul class="list">
+                  <li>
+                    <span class="name"> رقم الهاتف: </span>
+
+                    <span class="data"> 01000919626 </span>
+                  </li>
+
+                  <li>
+                    <span class="name"> العنوان بالتفصيل: </span>
+
+                    <span class="data">
+                      1 ش بن سينا - برقين - مركز السنبلاوين
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> رقم الطلب: </span>
+
+                    <span class="data"> 1003658950 </span>
+                  </div>
+                </div>
+
+                <div class="col-6 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> تاريخ الإستلام: </span>
+
+                    <span class="data"> 29/10/2024 </span>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> صانع المحتوى: </span>
+
+                    <span class="data"> أحمد عبده </span>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> مدة الفيديو: </span>
+
+                    <span class="data"> 30 الى 60 ثانيه </span>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> نوع الفيديو: </span>
+
+                    <span class="data"> UGC </span>
+                  </div>
+                </div>
+
+                <div class="col-6 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> إسم المنتج: </span>
+
+                    <span class="data"> مكنسة هوائيه </span>
+                  </div>
+                </div>
+
+                <div class="col-6 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> إسم الشركه: </span>
+
+                    <span class="data"> Smart home </span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-12 mb-2">
+                  <div class="data-contain between-data">
+                    <span class="name"> صورة المنتج: </span>
+
+                    <a href="#" class="custom-btn dark-btn small-btn">
+                      <img
+                        src="assets/images/icons/download.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <span> تحميل الملف </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-12 mb-2">
+                  <div class="data-contain between-data">
+                    <span class="name"> الشعار: </span>
+
+                    <a href="#" class="custom-btn dark-btn small-btn">
+                      <img
+                        src="assets/images/icons/download.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <span> تحميل الملف </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> الوصف: </span>
+
+                    <p class="desc">
+                      Quis ac nam urna feugiat rutrum suspendisse felis netus
+                      consectetur. Ac tempor massa mauris in. Suscipit tristique
+                      nisi volutpat
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> التركيز على: </span>
+
+                    <p class="desc">يجب التركيز على أن تكون التجربه حقيقيه.</p>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <div class="data-contain">
+                    <span class="name"> لهدية: </span>
+
+                    <p class="desc">
+                      يوجد كوبون خصم خاص بصانع المحتوى (ِ AB2024S30 ) بقيمه خصم
+                      30% مع الحصول على عموله قيمتها 10% لصانع المحتوى مع كل طلب
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                  <p class="price">
+                    <span> اكمالى التكلفة: </span>
+
+                    <span class="primary"> $20 </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
       id="cancelOrderModal"
       tabindex="-1"
       aria-labelledby="cancelOrderModalLabel"
@@ -626,12 +1002,12 @@
               <p>هل انت متأكد من إلغاء هذا الطلب؟</p>
 
               <div class="button-contain">
-                <a href="#" data-dismiss="modal" class="custom-btn primary-btn">
-                  <span> الرجوع </span>
+                <a href="#" class="custom-btn primary-btn">
+                  <span> إلغاء الطلب </span>
                 </a>
 
-                <a href="#" class="custom-btn dark-btn">
-                  <span> إلغاء الطلب </span>
+                <a href="#" data-dismiss="modal" class="custom-btn danger-btn">
+                  <span> الرجوع </span>
                 </a>
               </div>
             </div>
