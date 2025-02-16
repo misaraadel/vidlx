@@ -172,7 +172,7 @@
       box-shadow: 0px 0px 10px rgba($color: #f00, $alpha: 0.1);
       background-color: transparent;
       border-color: var(--danger-color) !important;
-      
+
       img {
         filter: var(--danger-filter);
       }
@@ -233,7 +233,6 @@
     }
 
     &:hover {
-
       box-shadow: 0px 0px 10px rgba($color: #6970ff, $alpha: 0.1);
 
       img {
@@ -802,6 +801,19 @@ header {
       display: block;
       margin-bottom: 12px;
       text-align: right;
+    }
+
+    .details-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin-bottom: 12px;
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary-color);
+      }
     }
 
     .form-icon,
@@ -2194,7 +2206,8 @@ footer {
   }
 
   .tab-content,
-  .tab-pane, .form-contain {
+  .tab-pane,
+  .form-contain {
     width: 100%;
   }
 
@@ -2415,7 +2428,8 @@ footer {
   .heading {
     margin-bottom: 24px;
 
-    h1, span {
+    h1,
+    span {
       font-size: 20px;
       font-weight: 700;
       color: var(--secondary-color);
@@ -2425,7 +2439,7 @@ footer {
   .nav {
     width: 100%;
     padding: 8px;
-    background-color: #f4F4F2;
+    background-color: #f4f4f2;
     border-radius: 50px;
     @include flexData();
     border: 0px;
@@ -2471,7 +2485,7 @@ footer {
     width: 100%;
     padding: 24px;
     border: 1px solid #e5e7e7;
-    background-color: #FDFFFF;
+    background-color: #fdffff;
     border-radius: 10px;
     transition: all 0.3s linear;
     margin-bottom: 16px;
@@ -2530,7 +2544,7 @@ footer {
             .name {
               font-size: 16px;
               font-weight: 500;
-              color: #666B6E;
+              color: #666b6e;
             }
 
             .data {
@@ -2568,13 +2582,13 @@ footer {
       }
 
       &.orange {
-        background-color: #FF95001A;
-        color: #FF9500;
+        background-color: #ff95001a;
+        color: #ff9500;
       }
 
       &.red {
-        background-color: #FBEAE4;
-        color: #E22900;
+        background-color: #fbeae4;
+        color: #e22900;
       }
 
       &.primary {
@@ -2594,9 +2608,9 @@ footer {
     }
 
     &:hover {
-      box-shadow: 0px 0px 10px rgba($color: #6970ff, $alpha: 0.20);
+      box-shadow: 0px 0px 10px rgba($color: #6970ff, $alpha: 0.2);
       border-color: rgba($color: #6970ff, $alpha: 0.2);
-      
+
       h1 {
         color: var(--primary-color) !important;
       }
@@ -2607,9 +2621,9 @@ footer {
 .address-contain {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgba($color: #BFC6FF, $alpha: .40);
+  border: 1px solid rgba($color: #bfc6ff, $alpha: 0.4);
   border-radius: 10px;
-  background-color: rgba($color: #BFC6FF, $alpha: .10);
+  background-color: rgba($color: #bfc6ff, $alpha: 0.1);
   text-align: start;
   margin-bottom: 50px;
 
@@ -2618,7 +2632,7 @@ footer {
   }
 
   .title {
-    font-size: 16px !important; 
+    font-size: 16px !important;
     font-weight: 900 !important;
     margin-bottom: 20px !important;
     color: var(--secondary-color) !important;
@@ -2626,7 +2640,7 @@ footer {
 
   .list {
     @include flexColumnCenter();
-    
+
     li {
       @include flexData();
       align-content: flex-start;
@@ -2636,14 +2650,14 @@ footer {
 
       &:first-child {
         padding-bottom: 10px !important;
-        border-bottom: 1px solid rgba($color: #BFC6FF, $alpha: .40);
+        border-bottom: 1px solid rgba($color: #bfc6ff, $alpha: 0.4);
         margin-bottom: 10px !important;
       }
 
       .name {
         font-size: 16px;
         font-weight: 500;
-        color: #666B6E;
+        color: #666b6e;
       }
 
       .data {
@@ -3539,7 +3553,7 @@ $hover-color: #d9d9d9;
     @include flexBetween();
     gap: 10px;
     padding: 10px 5px;
-    border-bottom: 1px solid #E5E7E7;
+    border-bottom: 1px solid #e5e7e7;
     background-color: var(--light-color);
 
     &:last-child {

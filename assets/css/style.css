@@ -1237,6 +1237,17 @@ header .contain .button-contain {
   margin-bottom: 12px;
   text-align: right;
 }
+.form-contain .form-group .details-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+}
+.form-contain .form-group .details-text span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
 .form-contain .form-group .form-icon,
 .form-contain .form-group .show_hide_password {
   width: 100%;
@@ -2616,7 +2627,8 @@ footer .contain .qr-contain img {
   color: var(--primary-color);
 }
 .modal-dialog .tab-content,
-.modal-dialog .tab-pane, .modal-dialog .form-contain {
+.modal-dialog .tab-pane,
+.modal-dialog .form-contain {
   width: 100%;
 }
 .modal-dialog .table-responsive {
@@ -2827,7 +2839,8 @@ footer .contain .qr-contain img {
 .order-data .heading {
   margin-bottom: 24px;
 }
-.order-data .heading h1, .order-data .heading span {
+.order-data .heading h1,
+.order-data .heading span {
   font-size: 20px;
   font-weight: 700;
   color: var(--secondary-color);
@@ -2835,7 +2848,7 @@ footer .contain .qr-contain img {
 .order-data .nav {
   width: 100%;
   padding: 8px;
-  background-color: #f4F4F2;
+  background-color: #f4f4f2;
   border-radius: 50px;
   display: flex;
   align-content: center;
@@ -2884,7 +2897,7 @@ footer .contain .qr-contain img {
   width: 100%;
   padding: 24px;
   border: 1px solid #e5e7e7;
-  background-color: #FDFFFF;
+  background-color: #fdffff;
   border-radius: 10px;
   transition: all 0.3s linear;
   margin-bottom: 16px;
@@ -2951,7 +2964,7 @@ footer .contain .qr-contain img {
 .order-data .order-box .flex-between .data-contain .list li .name {
   font-size: 16px;
   font-weight: 500;
-  color: #666B6E;
+  color: #666b6e;
 }
 .order-data .order-box .flex-between .data-contain .list li .data {
   font-size: 16px;
@@ -2985,11 +2998,11 @@ footer .contain .qr-contain img {
 }
 .order-data .order-box .badge.orange {
   background-color: rgba(255, 149, 0, 0.1019607843);
-  color: #FF9500;
+  color: #ff9500;
 }
 .order-data .order-box .badge.red {
-  background-color: #FBEAE4;
-  color: #E22900;
+  background-color: #fbeae4;
+  color: #e22900;
 }
 .order-data .order-box .badge.primary {
   background-color: #ebf1ff;
@@ -3054,7 +3067,7 @@ footer .contain .qr-contain img {
 .address-contain .list li .name {
   font-size: 16px;
   font-weight: 500;
-  color: #666B6E;
+  color: #666b6e;
 }
 .address-contain .list li .data {
   font-size: 16px;
@@ -3922,7 +3935,7 @@ footer .contain .qr-contain img {
   justify-content: space-between;
   gap: 10px;
   padding: 10px 5px;
-  border-bottom: 1px solid #E5E7E7;
+  border-bottom: 1px solid #e5e7e7;
   background-color: var(--light-color);
 }
 .wallet .wallet-data:last-child {
