@@ -3820,4 +3820,103 @@ $hover-color: #d9d9d9;
   }
 }
 
+.faq {
+  .heading {
+    text-align: center;
+
+    @include media() {
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--secondary-color);
+      margin: 0px;
+
+      @include media() {
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #DCE2FF !important;
+    background-color: transparent;
+    margin-bottom: 24px;
+
+    @include media() {
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .card-header {
+      padding: 0px;
+      border: 0px;
+      margin: 0px;
+      background-color: transparent;
+
+      .btn {
+        width: 100%;
+        padding: 0px;
+        @include flexData();
+        border-radius: 50px;
+        padding-inline-end: 15px;
+        position: relative;
+        z-index: 9;
+        color: var(--secondary-color);
+        font-size: 20px;
+        font-weight: 700;
+        background-color: transparent;
+
+        @include media() {
+          font-size: 14px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: url('../images/icons/down_arrow.svg') center / contain no-repeat;
+          top: calc(50% - 12px);
+          left: 0;
+          transition: all .3s linear;
+
+          @include ltr() {
+            right: 0;
+            left: unset;
+          }
+        }
+
+        &[aria-expanded="true"] {
+          color: var(--primary-color);
+
+          &::after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 12px 0px 0px;
+
+      p {
+        color: #3F3F3F;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px;
+
+        @include media() {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
 @import "media";

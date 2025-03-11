@@ -4191,6 +4191,100 @@ footer .contain .qr-contain img {
   }
 }
 
+.faq .heading {
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .faq .heading {
+    margin-bottom: 24px;
+  }
+}
+.faq .heading h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin: 0px;
+}
+@media (max-width: 992px) {
+  .faq .heading h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+.faq .card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #DCE2FF !important;
+  background-color: transparent;
+  margin-bottom: 24px;
+}
+@media (max-width: 992px) {
+  .faq .card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+}
+.faq .card .card-header {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+.faq .card .card-header .btn {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding-inline-end: 15px;
+  position: relative;
+  z-index: 9;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 700;
+  background-color: transparent;
+}
+@media (max-width: 992px) {
+  .faq .card .card-header .btn {
+    font-size: 14px;
+  }
+}
+.faq .card .card-header .btn::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icons/down_arrow.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  left: 0;
+  transition: all 0.3s linear;
+}
+html[dir=ltr] .faq .card .card-header .btn::after {
+  right: 0;
+  left: unset;
+}
+.faq .card .card-header .btn[aria-expanded=true] {
+  color: var(--primary-color);
+}
+.faq .card .card-header .btn[aria-expanded=true]::after {
+  transform: rotate(180deg);
+}
+.faq .card .card-body {
+  padding: 12px 0px 0px;
+}
+.faq .card .card-body p {
+  color: #3F3F3F;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
+}
+@media (max-width: 992px) {
+  .faq .card .card-body p {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 999px) {
   .order-mobile-0 {
     order: 0;
