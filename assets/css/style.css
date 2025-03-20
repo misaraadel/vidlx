@@ -4285,6 +4285,75 @@ html[dir=ltr] .faq .card .card-header .btn::after {
   }
 }
 
+.not-found .image-contain {
+  width: 100%;
+  height: 410px;
+  animation: translateY 1s linear infinite alternate;
+}
+@media (max-width: 992px) {
+  .not-found .image-contain {
+    height: 280px;
+  }
+}
+.not-found .image-contain img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.not-found .contain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.not-found .contain .sub-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #3F3F3F;
+}
+@media (max-width: 992px) {
+  .not-found .contain .sub-title {
+    font-size: 14px;
+  }
+}
+.not-found .contain h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin: 32px 0px 45px;
+}
+@media (max-width: 992px) {
+  .not-found .contain h1 {
+    font-size: 20px;
+    margin: 16px 0px 20px;
+  }
+}
+.not-found .contain .desc {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  color: #666B6E;
+}
+@media (max-width: 992px) {
+  .not-found .contain .desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.not-found .contain .button-contain {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .not-found .contain .button-contain .custom-btn {
+    width: calc(50% - 10px);
+  }
+}
+
 @media (max-width: 999px) {
   .order-mobile-0 {
     order: 0;
